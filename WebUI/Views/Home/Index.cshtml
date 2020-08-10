@@ -1,0 +1,24 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="col-md-12 blog-main">
+
+    @foreach (var articleItem in Model.Articles)
+    {
+    <div class="blog-post">
+        <h2 class="blog-post-title"><a href="@Url.Action("ArticleDetail", new { id = articleItem.Id })">@articleItem.Title</a></h2>
+        <p class="blog-post-meta">@articleItem.CreatedDate <a href="#">Jacob</a></p>
+        <img src="@articleItem.TitleImage" />
+        <div>@articleItem.Summary</div>
+    </div><!-- /.blog-post -->
+    }
+
+
+    <nav class="blog-pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+    </nav>
+
+</div><!-- /.blog-main -->

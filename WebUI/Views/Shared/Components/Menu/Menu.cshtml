@@ -1,0 +1,10 @@
+﻿@model List<CategoryItem>
+@{
+}
+
+
+@foreach (var category in Model)
+{
+
+    @Html.Partial("_MenuPartial", (CategoryItem)category);
+}
