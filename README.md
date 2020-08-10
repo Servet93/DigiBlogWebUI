@@ -5,6 +5,10 @@ Digi Blog Web UI, Digi Blog Web Apiden beslenen içerik sunum ve kontrolünün s
 ## Web Api Bağlantı Adresi
 Projenin appsettings.json konfigurasyon dosyasında "ApiBaseAddress" anahtarında "https://localhost:44343/api/" adresi olarak belirlenmiştir.Digi Blog Web Apiyi yayınladığınız adresi bu anahtarın değerine vererek projeyi çalıştırabilirsiniz.
 
+## Panele Giriş Bilgisi
+admin@admin.com
+Admin_2020
+
 ## Ekran Görüntüleri
 ```
 * Anasayfa
